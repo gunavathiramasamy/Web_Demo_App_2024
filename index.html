@@ -41,6 +41,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                      <div class="navItem">
                 <span class="limitedOffer">Limited Offer!</span>
+                         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .offer-btn {
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .offer-btn:hover {
+            background-color: #218838;
+        }
+        .thank-you {
+            margin-top: 20px;
+            color: green;
+            font-size: 24px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Special Limited Offer</h1>
+        <button class="offer-btn" onclick="showProductSelection()">Click Here for Offer</button>
+
+        <div id="product-selection" style="display:none; margin-top: 20px;">
+            <p>Select a product:</p>
+            <select id="product" onchange="thankYouMessage()">
+                <option value="">--Choose a product--</option>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+            </select>
+        </div>
+
+        <p id="thank-you" class="thank-you">Thank you for selecting a product!</p>
+    </div>
+
+    <script>
+        function showProductSelection() {
+            document.getElementById('product-selection').style.display = 'block';
+        }
+
+        function thankYouMessage() {
+            var product = document.getElementById('product').value;
+            if (product) {
+                document.getElementById('thank-you').style.display = 'block';
+            } else {
+                document.getElementById('thank-you').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
             </div>
         </div>
         <div class="navBottom">
