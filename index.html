@@ -41,7 +41,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                      <div class="navItem">
                 <span class="limitedOffer">Limited Offer!</span>
-                         <!DOCTYPE html>
+                        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,30 +50,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-        .container {
             text-align: center;
             margin-top: 50px;
         }
-        .offer-btn {
-            padding: 15px 25px;
-            background-color: #28a745;
-            color: white;
+
+        .button {
+            background-color: #4CAF50; /* Green */
             border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
             cursor: pointer;
-            font-size: 18px;
         }
-        .offer-btn:hover {
-            background-color: #218838;
-        }
-        .thank-you {
-            margin-top: 20px;
-            color: green;
-            font-size: 24px;
-            display: none;
+
+        .product-select {
+            padding: 10px;
+            font-size: 16px;
         }
     </style>
 </head>
+<body>
+
+    <h1>Special Limited Offer!</h1>
+
+    <!-- Button that links to product selection -->
+    <button class="button" onclick="showProductSelection()">Click Here for Limited Offer</button>
+
+    <!-- Hidden form for product selection -->
+    <div id="product-form" style="display:none;">
+        <h2>Select a Product:</h2>
+        <form action="thankyou.html" method="GET">
+            <select name="product" class="product-select">
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        // Function to show product selection form
+        function showProductSelection() {
+            document.getElementById('product-form').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
 <body>
 
     <div class="container">
