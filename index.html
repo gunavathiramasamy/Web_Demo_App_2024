@@ -92,38 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <body>
 
-    <div class="container">
-        <h1>Special Limited Offer</h1>
-        <button class="offer-btn" onclick="showProductSelection()">Click Here for Offer</button>
-
-        <div id="product-selection" style="display:none; margin-top: 20px;">
-            <p>Select a product:</p>
-            <select id="product" onchange="thankYouMessage()">
-                <option value="">--Choose a product--</option>
-                <option value="product1">Product 1</option>
-                <option value="product2">Product 2</option>
-                <option value="product3">Product 3</option>
-            </select>
-        </div>
-
-        <p id="thank-you" class="thank-you">Thank you for selecting a product!</p>
-    </div>
-
-    <script>
-        function showProductSelection() {
-            document.getElementById('product-selection').style.display = 'block';
-        }
-
-        function thankYouMessage() {
-            var product = document.getElementById('product').value;
-            if (product) {
-                document.getElementById('thank-you').style.display = 'block';
-            } else {
-                document.getElementById('thank-you').style.display = 'none';
-            }
-        }
-    </script>
-
+  
 </body>
 </html>
 
