@@ -75,34 +75,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </head>
 <body>
 
-    <h1>Special Limited Offer!</h1>
-
-    <!-- Button that links to product selection -->
-    <button class="button" onclick="showProductSelection()">Click Here for Limited Offer</button>
-
-    <!-- Hidden form for product selection -->
-    <div id="product-form" style="display:none;">
-        <h2>Select a Product:</h2>
-        <form action="thankyou.html" method="GET">
-            <select name="product" class="product-select">
-                <option value="product1">Product 1</option>
-                <option value="product2">Product 2</option>
-                <option value="product3">Product 3</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <script>
-        // Function to show product selection form
-        function showProductSelection() {
-            document.getElementById('product-form').style.display = 'block';
-        }
-    </script>
-
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited Offer</title>
+</head>
+<body>
+    <h1>Welcome to Our Website!</h1>
+    <button onclick="window.location.href='select-product.html'">Limited Offer</button>
 </body>
 </html>
+
+
 
 <body>
 
