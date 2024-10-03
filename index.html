@@ -122,63 +122,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
 
-            
-<!--
-  Note: In the following code sample, make sure to
-  replace "TAG_ID" with your tag ID.
-  Learn more: https://support.google.com/tagmanager/answer/12326985
--->
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KWT6KFS8"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E03VQKB8PX"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'GTM-KWT6KFS8');
+    gtag('config', 'G-E03VQKB8PX');
     </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the page</title>
 </head>
 <body>
-    <div>This is where the purchase form would go</div>
-    <button>Submit</button>
+    <p>Welcome to my website!</p>
+    
     <script>
-    gtag("event", "purchase", {
-        transaction_id: "T_12345_1",
-        value: 30.03,
-        tax: 4.90,
-        shipping: 5.99,
-        currency: "USD",
-        coupon: "SUMMER_SALE",
-        items: [
-        // If someone purchases more than one item,
-        // you can add those items to the items array
-         {
-          item_id: "SKU_12345",
-          item_name: "Stan and Friends Tee",
-          affiliation: "Google Merchandise Store",
-          coupon: "SUMMER_FUN",
-          discount: 2.22,
-          index: 0,
-          item_brand: "Google",
-          item_category: "Apparel",
-          item_category2: "Adult",
-          item_category3: "Shirts",
-          item_category4: "Crew",
-          item_category5: "Short sleeve",
-          item_list_id: "related_products",
-          item_list_name: "Related Products",
-          item_variant: "green",
-          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-          price: 10.01,
-          quantity: 3
-        }]
-    });
-    </script>
+      /**
+      *   The following event is sent when the page loads. You could
+      *   wrap the event in a JavaScript function so the event is
+      *   sent when the user performs some action.
+      */
+      gtag('event', 'screen_view', {
+        'app_name': 'myAppName',
+        'screen_name': 'Home'
+      });
+    </script> 
 </body>
-</html>
+</html>          
 
 
 
