@@ -425,13 +425,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-33XZ15DKHM');
+        gtag('config', 'G-33XZ15DKHM',{ 'debug_mode': true });
     </script>
 </head>
 <body>
-    <div>To View your items</div>
-    <button>view_item_list</button>
-    <script>                     
+    <div>This is where the purchase form would go</div>
+    <button id="view_item_list">view_item_list</button>
+    <script>
+                  
   gtag("event", "view_item_list", {
   item_list_id: "related_products",
   item_list_name: "Related products",
