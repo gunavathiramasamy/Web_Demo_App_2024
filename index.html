@@ -75,73 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </head>
 <body>
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limited Offer</title>
-</head>
-<body>
-    <h1>Welcome to Our Website!</h1>
-    <!-- Button to redirect to the select-product.html page -->
- <button onclick="window.location.href='select-product.htm'">Purchase</button>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-33XZ15DKHM');
-    </script>
-</head>
-<body>
-    <div>This is where the purchase form would go</div>
-    <button>Submit</button>
-    <script>
-    gtag("event", "purchase", {
-        transaction_id: "T_12345_1",
-        value: 30.03,
-        tax: 4.90,
-        shipping: 5.99,
-        currency: "USD",
-        coupon: "SUMMER_SALE",
-        items: [
-        // If someone purchases more than one item,
-        // you can add those items to the items array
-         {
-          item_id: "SKU_12345",
-          item_name: "Stan and Friends Tee",
-          affiliation: "Google Merchandise Store",
-          coupon: "SUMMER_FUN",
-          discount: 2.22,
-          index: 0,
-          item_brand: "Google",
-          item_category: "Apparel",
-          item_category2: "Adult",
-          item_category3: "Shirts",
-          item_category4: "Crew",
-          item_category5: "Short sleeve",
-          item_list_id: "related_products",
-          item_list_name: "Related Products",
-          item_variant: "green",
-          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-          price: 10.01,
-          quantity: 3
-        }]
-    });
-    </script>
-</body>
-</html>
-</body>
-   
-</html>
-
-    <!--
+<!--
   Note: In the following code sample, make sure to
   replace "TAG_ID" with your tag ID.
   Learn more: https://support.google.com/tagmanager/answer/12326985
@@ -150,13 +84,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-33XZ15DKHM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-33XZ15DKHM');
+        gtag('config', 'G-33XZ15DKHM',{ 'debug_mode': true });
     </script>
 </head>
 <body>
@@ -169,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 // from the previous purchase event so Analytics
                 // doesn't deduplicate the events.
                 // Learn more: https://support.google.com/analytics/answer/12313109
-                transaction_id: "T_12345_2",
+                transaction_id: "T_12345_3",
                 value: 30.03,
                 tax: 4.90,
                 shipping: 5.99,
@@ -196,11 +130,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   price: 10.01,
                   quantity: 3
                 }]
-          });
-      });
+        });
+    });
     </script>
 </body>
 </html>
+
 
             </div>
         </div>
