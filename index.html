@@ -432,7 +432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div>This is where the purchase form would go</div>
     <button id="view_item_list">view_item_list</button>
     <script>
-                  
+document.getElementById("view_item_list").addEventListener("click", function () {               
   gtag("event", "view_item_list", {
   item_list_id: "related_products",
   item_list_name: "Related products",
