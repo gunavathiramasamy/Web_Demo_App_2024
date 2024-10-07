@@ -479,7 +479,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </html>
 
-gtag("event", "view_item_list", {
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-33XZ15DKHM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-33XZ15DKHM');
+    </script>
+</head>
+<body>
+    <div>To View your items</div>
+    <button>view_item_list</button>
+    <script>                     
+  gtag("event", "view_item_list", {
   item_list_id: "related_products",
   item_list_name: "Related products",
   items: [
