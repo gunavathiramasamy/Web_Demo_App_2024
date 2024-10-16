@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
-    <nav id="nav">
+  <nav id="nav">
         <div class="navTop">
             <div class="navItem">
                 <h2>MDS Demo EcommerceStore</h2>
@@ -39,7 +39,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-                     <div class="navItem">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Items</title>
+    <style>
+        .search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .searchInput {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .searchIcon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .searchIcon:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search">
+        <form action="/search-results" method="GET" id="searchForm">
+            <input type="text" name="q" placeholder="Search..." class="searchInput" fdprocessedid="etex28" list="suggestions">
+            <img src="search.png" width="20" height="20" alt="Search" class="searchIcon" onclick="document.getElementById('searchForm').submit();">
+            <!-- Datalist to provide suggestions based on the available items -->
+            <datalist id="suggestions">
+                <option value="AIR FORCE"></option>
+                <option value="JORDAN"></option>
+                <option value="BLAZER"></option>
+                <option value="CRATER"></option>
+                <option value="HIPPIE"></option>
+            </datalist>
+        </form>
+    </div>
+
+    <script>
+        // Optional: Allows the form to be submitted when pressing Enter
+        document.querySelector('.searchInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                document.getElementById('searchForm').submit();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+                     <div class="navItem"> 
                 <span class="limitedOffer">Purchase!</span>
                         <!DOCTYPE html>
 <html lang="en">
